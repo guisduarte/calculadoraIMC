@@ -1,1 +1,1 @@
-# calculadoraIMC
+# calculadora IMC feita com JavaScript
