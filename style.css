@@ -5,7 +5,8 @@ body {
 .container{    
     display: flex;
     justify-content: space-around;
-    margin: 4em auto;
+    margin: 4em auto auto;   
+    
 }
 
 .caixa {
@@ -55,7 +56,6 @@ input {
 
 .caixa-resultado {
     display: flex;
-    align-items: top;
     column-gap: 1rem;
     margin: 2rem;
 }
@@ -73,7 +73,28 @@ input {
 .seu-imc {
     font-size: 1.2rem;
     font-weight: bold;
-    height: 1.875rem;
+    height: 1.875rem;    
 }
 
+footer {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
 
+@media (max-width: 425px) {
+    .caixa-resultado {
+        flex-wrap: wrap;
+    }
+
+    .caixa-imagem {
+        margin-top: 1rem;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .resultado {
+        min-height: 3rem;
+    }
+}
